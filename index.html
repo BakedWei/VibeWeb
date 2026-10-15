@@ -1,0 +1,450 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>許哲維 BakedWei // SYS.IDENTITY Card</title>
+<!-- Google Fonts: Space Grotesk, JetBrains Mono, Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatum from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface-variant": "#b9cacb",
+            "secondary": "#ddb7ff",
+            "inverse-on-surface": "#2c303b",
+            "inverse-primary": "#006970",
+            "surface-tint": "#00dbe9",
+            "tertiary-fixed-dim": "#4edea3",
+            "on-secondary-fixed-variant": "#6900b3",
+            "surface-dim": "#0f131d",
+            "on-tertiary-fixed-variant": "#005236",
+            "inverse-surface": "#dfe2f1",
+            "on-surface": "#dfe2f1",
+            "surface-container-low": "#171b26",
+            "surface-container-high": "#262a35",
+            "primary-fixed-dim": "#00dbe9",
+            "on-secondary-container": "#d6a9ff",
+            "on-primary-container": "#006970",
+            "on-primary": "#00363a",
+            "surface-bright": "#353944",
+            "on-secondary-fixed": "#2c0051",
+            "secondary-fixed-dim": "#ddb7ff",
+            "on-error": "#690005",
+            "tertiary-container": "#65f2b5",
+            "surface-container-lowest": "#0a0e18",
+            "on-primary-fixed": "#002022",
+            "on-error-container": "#ffdad6",
+            "outline-variant": "#3b494b",
+            "on-tertiary-container": "#006d4a",
+            "primary": "#dbfcff",
+            "surface-variant": "#313540",
+            "background": "#0f131d",
+            "surface-container-highest": "#313540",
+            "surface": "#0f131d",
+            "on-tertiary-fixed": "#002113",
+            "on-primary-fixed-variant": "#004f54",
+            "on-background": "#dfe2f1",
+            "primary-container": "#00f0ff",
+            "tertiary": "#d8ffe7",
+            "on-tertiary": "#003824",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "primary-fixed": "#7df4ff",
+            "secondary-container": "#6f00be",
+            "secondary-fixed": "#f0dbff",
+            "tertiary-fixed": "#6ffbbe",
+            "outline": "#849495",
+            "surface-container": "#1c1f2a",
+            "on-secondary": "#490080"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "margin": "2.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Space Grotesk"],
+            "headline-xl-mobile": ["Space Grotesk"],
+            "label-lg": ["JetBrains Mono"],
+            "headline-xl": ["Space Grotesk"],
+            "label-sm": ["JetBrains Mono"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "label-md": ["JetBrains Mono"]
+          },
+          "fontSize": {
+            "body-sm": ["0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.625rem", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.55", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg": ["2rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-xl": ["3rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["1.125rem", { "lineHeight": "1.35", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-md": ["1.375rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["0.75rem", { "lineHeight": "1.3", "letterSpacing": "0.04em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.06); }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary font-body-md overflow-x-hidden relative">
+<!-- Ambient Light Emitters (Atmospheric Depth) -->
+<div class="fixed top-[-10%] left-[15%] w-[600px] h-[600px] rounded-full bg-primary-container/10 blur-[130px] pointer-events-none -z-10 animate-pulse-glow"></div>
+<div class="fixed bottom-[-10%] right-[12%] w-[550px] h-[550px] rounded-full bg-secondary-container/20 blur-[140px] pointer-events-none -z-10 animate-pulse-glow" style="animation-delay: 2s;"></div>
+<!-- Shared Component: TopAppBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-6 py-3 max-w-7xl mx-auto bg-surface-container-lowest/60 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_-2px_rgba(0,240,255,0.08)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl" data-icon="terminal">terminal</span>
+<span class="text-headline-sm font-headline-sm tracking-widest text-primary">// SYS.IDENTITY</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low/70 border border-outline-variant/40">
+
+<span class="text-label-sm font-label-sm text-on-surface-variant">PORT 8080 // ONLINE</span>
+</div>
+<div class="text-label-sm font-label-sm text-primary font-bold px-3 py-1 rounded-full border border-primary-container/30 bg-primary-container/10 shadow-[0_0_12px_rgba(0,240,255,0.2)]">
+        STATUS: ACTIVE
+      </div>
+</div>
+</header>
+<!-- Main Profile Viewport Canvas -->
+<main class="flex-grow flex items-center justify-center p-4 sm:p-6 lg:p-10 relative z-10 w-full max-w-7xl mx-auto">
+<!-- Central Futuristic Horizontal Glass Student Card Container -->
+<div class="w-full max-w-5xl rounded-3xl backdrop-blur-2xl bg-surface-container-lowest/70 border border-outline-variant/40 shadow-[0_16px_56px_-8px_rgba(0,0,0,0.8),0_0_36px_-4px_rgba(0,240,255,0.14),0_0_24px_-6px_rgba(168,85,247,0.18)] overflow-hidden relative transition-all duration-300 hover:border-outline-variant/70">
+<!-- Top Specular Refraction Highlight Line -->
+<div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary-container/50 to-transparent"></div>
+<!-- Card Main Body: 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10">
+<!-- LEFT COLUMN (Portrait & Identity Anchors - approx 4 of 12 cols) -->
+<div class="lg:col-span-4 flex flex-col items-center text-center lg:text-left lg:items-start justify-between space-y-6"><!-- Avatar Frame with Radial Glow & Holographic Rim -->
+<div class="relative group mx-auto lg:mx-0">
+<!-- Glow Aura -->
+<div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-primary-container to-secondary opacity-40 blur-md group-hover:opacity-75 transition-opacity duration-500"></div>
+<!-- Student Photo Frame -->
+<div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border border-primary-container/40 bg-surface-container-low shadow-[inset_0_0_20px_rgba(0,240,255,0.2)]">
+<img class="w-full h-full object-cover object-top filter contrast-105" data-alt="許哲維 BakedWei - 資訊工程學系全英組 / CSE" src="./avatar.jpg">
+<!-- Subtle Holographic Grid Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<!-- Verification Seal Badge -->
+<div class="absolute bottom-2 right-2 flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-lowest/90 border border-primary-container/60 shadow-[0_0_12px_rgba(0,240,255,0.4)]" title="Cryptographically Verified Academic Node">
+<span class="material-symbols-outlined text-primary-container text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+</div>
+<!-- Neon Live Status Pill -->
+
+<!-- Location Indicator -->
+<div class="w-full flex items-center justify-center lg:justify-start gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="location_on">location_on</span>
+<span class="">Kaohsiung, Taiwan // NSYSU</span>
+</div>
+<!-- Interactive Static Mail Pill Trigger -->
+<div class="w-full">
+<button class="w-full group flex items-center justify-between px-4 py-2.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high/60 border border-outline-variant/40 hover:border-primary-container/50 transition-all duration-300 shadow-sm" id="copyEmailBtn" onclick="copyToClipboard('b153245008@student.nsysu.edu.tw')" title="Click to copy communication address">
+<div class="flex items-center gap-2.5 truncate">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="mail">mail</span>
+<span class="text-label-md font-label-md text-on-surface truncate" id="emailText">b153245008@student.nsysu.edu.tw</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-container text-base transition-colors" data-icon="content_copy" id="copyIcon">content_copy</span>
+</button><button class="w-full group flex items-center justify-between px-4 py-2.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high/60 border border-outline-variant/40 hover:border-secondary/50 transition-all duration-300 shadow-sm mt-2" onclick="copyToClipboard('jayhsu3e@gmail.com')" title="Click to copy personal communication address"><div class="flex items-center gap-2.5 truncate"><span class="material-symbols-outlined text-secondary text-base" data-icon="alternate_email">alternate_email</span><span class="text-label-md font-label-md text-on-surface truncate">jayhsu3e@gmail.com</span></div><span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary text-base transition-colors" data-icon="content_copy">content_copy</span></button>
+</div>
+<!-- Holo-Simulations // Active Stacks Section -->
+<div class="w-full pt-2 border-t border-outline-variant/20">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="sports_esports">sports_esports</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant/80 tracking-wider uppercase">Holo-Simulations // Active Stacks</span>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded-full bg-surface-container-low/80 border border-outline-variant/30 text-on-surface-variant flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>RUNTIME: ENGAGED
+</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="group p-2.5 rounded-xl bg-surface-container-low/50 border border-outline-variant/30 hover:border-primary-container/50 hover:bg-surface-container-high/40 transition-all duration-200 flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 border border-primary-container/30 flex items-center justify-center shrink-0 text-primary-container group-hover:shadow-[0_0_10px_rgba(0,240,255,0.3)] transition-all">
+<span class="material-symbols-outlined text-base" data-icon="memory">memory</span>
+</div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface font-medium truncate group-hover:text-primary transition-colors">C++ Kernel</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 truncate">OOP // Pointers // Vectors</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-primary-container/10 border border-primary-container/30 text-primary-container shrink-0 ml-2">Active</span>
+</div>
+<div class="group p-2.5 rounded-xl bg-surface-container-low/50 border border-outline-variant/30 hover:border-secondary/50 hover:bg-surface-container-high/40 transition-all duration-200 flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 border border-secondary/30 flex items-center justify-center shrink-0 text-secondary group-hover:shadow-[0_0_10px_rgba(221,183,255,0.3)] transition-all">
+<span class="material-symbols-outlined text-base" data-icon="smartphone">smartphone</span>
+</div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface font-medium truncate group-hover:text-secondary transition-colors">React Native &amp; Flutter</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 truncate">Mobile UI // Expo Dev</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-secondary-container/20 border border-secondary/30 text-secondary shrink-0 ml-2">Deploying</span>
+</div>
+<div class="group p-2.5 rounded-xl bg-surface-container-low/50 border border-outline-variant/30 hover:border-tertiary-fixed-dim/50 hover:bg-surface-container-high/40 transition-all duration-200 flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 border border-tertiary-fixed-dim/30 flex items-center justify-center shrink-0 text-tertiary-fixed-dim group-hover:shadow-[0_0_10px_rgba(78,222,163,0.3)] transition-all">
+<span class="material-symbols-outlined text-base" data-icon="terminal">terminal</span>
+</div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface font-medium truncate group-hover:text-tertiary transition-colors">Python Tooling</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 truncate">Tkinter // Pygame // PyInstaller</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container-low/70 border border-outline-variant/40 text-on-surface-variant shrink-0 ml-2">Compiled</span>
+</div>
+<div class="group p-2.5 rounded-xl bg-surface-container-low/50 border border-outline-variant/30 hover:border-primary-fixed-dim/50 hover:bg-surface-container-high/40 transition-all duration-200 flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/80 border border-primary-fixed-dim/30 flex items-center justify-center shrink-0 text-primary-fixed-dim group-hover:shadow-[0_0_10px_rgba(0,219,233,0.3)] transition-all">
+<span class="material-symbols-outlined text-base" data-icon="keyboard">keyboard</span>
+</div>
+<div class="truncate">
+<div class="text-label-md font-label-md text-on-surface font-medium truncate group-hover:text-primary-fixed-dim transition-colors">Ubuntu OS</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 truncate">Vim netrw // CLI Compilation</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-primary-container/10 border border-primary-container/30 text-primary-container shrink-0 ml-2">Native</span>
+</div>
+</div>
+</div></div>
+<!-- RIGHT COLUMN (Bio, Quote, Pills, Socials - approx 8 of 12 cols) -->
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<!-- Top Row: Student Name, Major Tagline & Download Button -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-outline-variant/20 pb-5">
+<div>
+<div class="flex items-center gap-3">
+<h1 class="text-headline-lg font-headline-lg text-primary tracking-tight font-bold drop-shadow-[0_0_12px_rgba(219,252,255,0.3)]">
+                  許哲維 BakedWei
+                </h1>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-primary-container/15 text-primary-container border border-primary-container/30">ID // B153245008</span>
+</div>
+<p class="text-label-md font-label-md text-on-surface-variant mt-1.5 flex items-center gap-2">
+<span class="text-secondary font-medium">資訊工程學系全英組 / CSE</span>
+<span class="opacity-40">//</span>
+<span class="text-primary-fixed-dim">Class of 2030</span>
+</p>
+</div>
+<!-- Resume Download Action Pill -->
+
+</div>
+<!-- Bio Narrative -->
+<div class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Architecting cross-platform neural interfaces (Flutter / React Native) and delving into low-level C++ memory structures at NSYSU. Native to Ubuntu environments and Vim netrw navigation. Bridging desktop network telemetry with Tkinter and PyInstaller.
+          </div>
+<!-- Stylized Glass Quote Box -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest/50 border border-outline-variant/30 p-4 sm:p-5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-container via-secondary to-secondary-container"></div>
+<div class="flex items-start gap-3 pl-2">
+<span class="material-symbols-outlined text-secondary/60 text-xl shrink-0 mt-0.5" data-icon="format_quote">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-on-surface italic font-medium">
+                "「人生開心就好」— Happiness is the ultimate metric. Speed of compilation is just a bonus."
+              </p>
+</div>
+</div>
+<!-- Rounded Neon Tag Chips -->
+<div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 mb-2.5 tracking-wider uppercase">Focus Vectors</div>
+<div class="flex flex-wrap gap-2">
+<span class="text-label-sm font-label-sm px-3 py-1 rounded-full bg-surface-container-low/70 border border-primary-container/30 text-primary hover:border-primary-container hover:shadow-[0_0_10px_rgba(0,240,255,0.25)] transition-all cursor-default">
+                #CppMemoryManagement
+              </span>
+<span class="text-label-sm font-label-sm px-3 py-1 rounded-full bg-surface-container-low/70 border border-primary-container/30 text-primary hover:border-primary-container hover:shadow-[0_0_10px_rgba(0,240,255,0.25)] transition-all cursor-default">
+                #FlutterArchitecture
+              </span>
+<span class="text-label-sm font-label-sm px-3 py-1 rounded-full bg-surface-container-low/70 border border-primary-container/30 text-primary hover:border-primary-container hover:shadow-[0_0_10px_rgba(0,240,255,0.25)] transition-all cursor-default">
+                #VimNetrw
+              </span>
+<span class="text-label-sm font-label-sm px-3 py-1 rounded-full bg-surface-container-low/70 border border-primary-container/30 text-primary hover:border-primary-container hover:shadow-[0_0_10px_rgba(0,240,255,0.25)] transition-all cursor-default">
+                #PythonPrototyping
+              </span>
+<span class="text-label-sm font-label-sm px-3 py-1 rounded-full bg-surface-container-low/70 border border-primary-container/30 text-primary hover:border-primary-container hover:shadow-[0_0_10px_rgba(0,240,255,0.25)] transition-all cursor-default">
+                #AlgorithmThinking
+              </span>
+</div>
+</div>
+<!-- Social Link Badges Row -->
+<div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/70 mb-2.5 tracking-wider uppercase">External Nodes</div>
+<div class="flex flex-wrap gap-2.5">
+<!-- GitHub Badge -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low/50 border border-outline-variant/40 hover:border-primary-container/60 hover:bg-surface-container-high/40 transition-all duration-200" href="https://github.com/BakedWei" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-base text-on-surface-variant group-hover:text-primary-container transition-colors" data-icon="code">code</span>
+<span class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">GitHub</span>
+</a>
+<!-- Riot Games Badge -->
+<button class="group flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low/50 border border-outline-variant/40 hover:border-secondary/60 hover:bg-surface-container-high/40 transition-all duration-200 cursor-pointer" onclick="copyToClipboard('回憶是被珍藏的沙#我i愛琴海')" title="點擊複製 Riot ID: 回憶是被珍藏的沙#我i愛琴海">
+<span class="material-symbols-outlined text-base text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="sports_esports">sports_esports</span>
+<span class="text-label-md font-label-md text-on-surface group-hover:text-secondary transition-colors">Riot Games</span>
+</button>
+<!-- Discord Badge -->
+<button class="group flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low/50 border border-outline-variant/40 hover:border-primary-container/60 hover:bg-surface-container-high/40 transition-all duration-200 cursor-pointer" onclick="copyToClipboard('@wee_221')" title="點擊複製 Discord: @wee_221">
+<span class="material-symbols-outlined text-base text-on-surface-variant group-hover:text-primary-container transition-colors" data-icon="forum">forum</span>
+<span class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">Discord</span>
+</button>
+<!-- Live Portfolio / Live Demo Badge -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low/50 border border-primary-container/40 hover:border-primary-container hover:bg-primary-container/10 transition-all duration-200 shadow-[0_0_12px_rgba(0,240,255,0.15)]" href="https://github.com/BakedWei" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-base text-primary-container" data-icon="smartphone">smartphone</span>
+<span class="text-label-md font-label-md text-primary font-medium">Live Demo</span>
+<span class="material-symbols-outlined text-xs text-primary-container group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Hairline Glowing Translucent Divider -->
+<div class="relative w-full h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<!-- Bottom Metric Telemetry Cluster: 4-Column Balanced Grid -->
+<div class="p-6 sm:p-8 bg-surface-container-lowest/40 backdrop-blur-md">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Metric Card 1 -->
+<div class="group p-4 rounded-xl bg-surface-container-low/40 border border-outline-variant/30 hover:border-primary-container/50 hover:bg-surface-container-high/30 transition-all duration-300">
+<div class="flex items-center justify-between text-on-surface-variant mb-1.5">
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Standing</span>
+<span class="material-symbols-outlined text-sm text-primary-container" data-icon="school">school</span>
+</div>
+<div class="text-headline-md font-headline-md font-bold text-primary group-hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.4)] transition-all">
+              Freshman
+            </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/80 mt-1 truncate">
+              NSYSU CSE // Calculus &amp; CS Core
+            </div>
+</div>
+<!-- Metric Card 2 -->
+<div class="group p-4 rounded-xl bg-surface-container-low/40 border border-outline-variant/30 hover:border-primary-container/50 hover:bg-surface-container-high/30 transition-all duration-300">
+<div class="flex items-center justify-between text-on-surface-variant mb-1.5">
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Global Nav</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="public">public</span>
+</div>
+<div class="text-headline-md font-headline-md font-bold text-secondary group-hover:drop-shadow-[0_0_8px_rgba(221,183,255,0.4)] transition-all">
+              4 Nodes
+            </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/80 mt-1 truncate">
+              Japan, Scotland, Turkey, China
+            </div>
+</div>
+<!-- Metric Card 3 -->
+<div class="group p-4 rounded-xl bg-surface-container-low/40 border border-outline-variant/30 hover:border-primary-container/50 hover:bg-surface-container-high/30 transition-all duration-300">
+<div class="flex items-center justify-between text-on-surface-variant mb-1.5">
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Logistics</span>
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<div class="text-headline-md font-headline-md font-bold text-tertiary group-hover:drop-shadow-[0_0_8px_rgba(78,222,163,0.4)] transition-all">
+              2 Years
+            </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/80 mt-1 truncate">
+              Rural Sci-Ed Volunteer (Grades 3-4)
+            </div>
+</div>
+<!-- Metric Card 4 -->
+<div class="group p-4 rounded-xl bg-surface-container-low/40 border border-outline-variant/30 hover:border-primary-container/50 hover:bg-surface-container-high/30 transition-all duration-300">
+<div class="flex items-center justify-between text-on-surface-variant mb-1.5">
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Hardware</span>
+<span class="material-symbols-outlined text-sm text-primary-fixed" data-icon="developer_board">developer_board</span>
+</div>
+<div class="text-headline-md font-headline-md font-bold text-primary group-hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.4)] transition-all">
+              Pixel 8
+            </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant/80 mt-1 truncate">
+              RhinoShield Armored Comms
+            </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Shared Component: Footer -->
+<footer class="w-full py-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto bg-surface-container-lowest/80 backdrop-blur-md border-t border-outline-variant/20">
+<div class="text-body-sm font-body-sm text-on-surface-variant/70 text-center md:text-left">
+      © 2026 // ENCRYPTED TELEMETRY DOCK. COMPILED VIA UBUNTU TERMINAL.
+    </div>
+<div class="flex items-center gap-6">
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-colors duration-200 cursor-pointer" href="#source">SOURCE PROTOCOL</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-colors duration-200 cursor-pointer" href="#keys">PUBLIC KEYS</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-colors duration-200 cursor-pointer" href="#audit">SECURITY AUDIT</a>
+</div>
+</footer>
+<!-- Micro-Interactions Script -->
+<script>
+    function copyToClipboard(text) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(showCopiedState);
+      } else {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showCopiedState();
+      }
+    }
+
+    function showCopiedState() {
+      const icon = document.getElementById('copyIcon');
+      const text = document.getElementById('emailText');
+      const originalText = text.innerText;
+      
+      icon.innerText = 'check';
+      icon.classList.add('text-tertiary-fixed-dim');
+      text.innerText = 'COPIED TO CLIPBOARD';
+      text.classList.add('text-tertiary-fixed-dim');
+
+      setTimeout(() => {
+        icon.innerText = 'content_copy';
+        icon.classList.remove('text-tertiary-fixed-dim');
+        text.innerText = originalText;
+        text.classList.remove('text-tertiary-fixed-dim');
+      }, 2000);
+    }
+  </script>
+
+
+</body></html>
